@@ -1,7 +1,8 @@
-public class gad {
+public class gad extends Zwierze {
     protected String typSkóry;
 
-    public gad(String typSkóry) {
+    public gad(String nazwa, int wiek, String typSkóry) {
+        super(nazwa, wiek);
         this.typSkóry = typSkóry;
     }
 
@@ -11,5 +12,24 @@ public class gad {
 
     public void setTypSkóry(String typSkóry) {
         this.typSkóry = typSkóry;
+    }
+
+    @Override
+    public String wydajDzwiek() {
+        return "gad wydaje dzwiek";
+    }
+
+    @Override
+    public String poruszajSie() {
+        return "gad sie porusza";
+    }
+
+    @Override
+    public String srodowiskoNaturalne() {
+        return "tereny suche";
+    }
+
+    public void typSkóry() {
+        System.out.println("typ skóry: " + typSkóry);
     }
 }

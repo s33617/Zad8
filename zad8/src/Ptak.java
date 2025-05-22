@@ -13,4 +13,24 @@ public class Ptak extends Zwierze {
     public void setUpierzenie(String upierzenie) {
         this.upierzenie = upierzenie;
     }
+
+    @Override
+    public String wydajDzwiek() {
+        return "Ptak wydaje dzwiek ";
+    }
+
+    @Override
+    public String poruszajSie() {
+        return "Ptak sie porusza";
+    }
+
+    @Override
+    public String srodowiskoNaturalne() {
+        return "Powietrze";
+    }
+
+
+    public void upierzenie() {
+        System.out.println("Upierzenie " + upierzenie);
+    }
 }

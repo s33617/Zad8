@@ -13,4 +13,23 @@ public class Ssak extends Zwierze {
     public void setWaga(int waga) {
         this.waga = waga;
     }
+
+    @Override
+    public String wydajDzwiek() {
+        return "Ssak wydaje dzwiek";
+    }
+
+    @Override
+    public String poruszajSie() {
+        return "ssak porusza sie";
+    }
+
+    @Override
+    public String srodowiskoNaturalne() {
+        return "lasy";
+    }
+
+    public void wagaSsaka() {
+        System.out.println("Waga: " + waga);
+    }
 }
